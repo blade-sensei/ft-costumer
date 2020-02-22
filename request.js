@@ -16,6 +16,10 @@ async function getRequestUrlContent(url) {
     return response;
 }
 
+/**
+ * @async
+ * @param {string[]} urls 
+ */
 async function multiFetchUrl(urls) {
     const requests = urls.map(url => {
         return getRequestUrlContent(url);
