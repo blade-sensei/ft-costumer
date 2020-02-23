@@ -25,7 +25,7 @@ You can also use it with async await
 
 ## Contribute
 
-### Test/Debug Local
+### Test Local
 
 > Use npm command 'link', instead of publishing your package to be used in another project/app/package we can create a local install with link command.
 
@@ -40,6 +40,23 @@ Then go to your project 'A' and run the command
 npm link ft-request-url
 
 //ft-request-url is the package name in package.json
+```
+
+### Debug
+
+You can use VS Debug and create a launch.json configuration, this will debug all the code in the test.js
+This is a first way to debug, maybe it can be improve
+
+```json
+{
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/test.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+}
 ```
 
 ### Build documentation
