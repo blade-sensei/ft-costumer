@@ -5,15 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "doc": "jsdoc ./request.js"
+    "build:dts": "tsc -d --declarationDir dist/lib --emitDeclarationOnly --allowJs --declaration index.js",
+    "build:doc": "typedoc --options typedoc.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "typescript": "^3.8.2"
   },
   "devDependencies": {
     "jsdoc": "^3.6.3",
-    "jsdoc-to-markdown": "^5.0.3"
+    "minami": "^1.2.3",
+    "tsd-jsdoc": "^2.4.0",
+    "typedoc": "^0.16.10",
+    "typedoc-plugin-markdown": "^2.2.16"
   }
 }
