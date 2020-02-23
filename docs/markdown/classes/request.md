@@ -1,4 +1,4 @@
-[my-cool-project](../README.md) › [Globals](../globals.md) › [Request](request.md)
+[my-cool-project](../README.md) › [Request](request.md)
 
 # Class: Request
 
@@ -18,7 +18,7 @@
 
 ▸ **multiFetchUrl**(`urls`: string[]): *Promise‹any›*
 
-Defined in request.d.ts:7
+*Defined in [request.d.ts:7](https://github.com/blade-sensei/ft-costumer/blob/9d50b0b/dist/lib/request.d.ts#L7)*
 
 **`async`** 
 

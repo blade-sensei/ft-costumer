@@ -1,3 +1,3 @@
 ## Documentation
 
-Go to [documentation](./docs/README.md)
+Go to [](./docs/README.md)
