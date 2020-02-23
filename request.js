@@ -1,5 +1,4 @@
-
-import * as axios from 'axios';
+const axios = require('axios');
 
 const getRequestUrlContent = async (url) => {
     const response = {
@@ -16,13 +15,11 @@ const getRequestUrlContent = async (url) => {
     }
     return response;
 }
-
-class Request {
-     /**
+  /**
      * @async
      * @param {string[]} urls 
      */
-    async multiFetchUrl(urls)  {
+    async function multiFetchUrl(urls)  {
         const requests = urls.map(url => {
             return getRequestUrlContent(url);
         })
@@ -30,6 +27,9 @@ class Request {
         return Promise.all(requests);
     }
 
+const request = {
+    multiFetchUrl,
 }
 
-export default Request;
+module.exports = request;
+

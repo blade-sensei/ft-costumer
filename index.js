@@ -1,1 +1,1 @@
-export  { default as Request } from './request';
+module.exports = require('./request');
