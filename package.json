@@ -1,6 +1,6 @@
 {
   "name": "@blade-sensei/ft-request-url",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,6 @@
   },
   "devDependencies": {
     "jsdoc": "^3.6.3",
-    "minami": "^1.2.3",
     "tsd-jsdoc": "^2.4.0",
     "typedoc": "^0.16.10",
     "typedoc-plugin-markdown": "^2.2.16"
