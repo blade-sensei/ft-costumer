@@ -1,5 +1,6 @@
 /**
    * @async
    * @param {string[]} urls
+   * @returns {Promise<Response[]>} promise of response
    */
-export function multiFetchUrl(urls: string[]): Promise<any>;
+export function multiFetchUrl(urls: string[]): Promise<Response[]>;

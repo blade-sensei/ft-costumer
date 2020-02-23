@@ -1,5 +1,11 @@
 const axios = require('axios');
 
+
+/**
+ * 
+ * @param {string} url 
+ * @returns {Response}
+ */
 const getRequestUrlContent = async (url) => {
     const response = {
         url: url,
@@ -9,6 +15,7 @@ const getRequestUrlContent = async (url) => {
     try {
         const content = await axios.get(url);
         response.content = content;
+        response.status = 'completed'
         
     } catch(error) {
         response.error = 'error';
@@ -18,6 +25,7 @@ const getRequestUrlContent = async (url) => {
   /**
      * @async
      * @param {string[]} urls 
+     * @returns {Promise<Response[]>} promise of response
      */
     async function multiFetchUrl(urls)  {
         const requests = urls.map(url => {
