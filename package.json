@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dts": "tsc -d --declarationDir dist/lib --emitDeclarationOnly --allowJs --declaration index.js",
-    "build:doc": "typedoc --options typedoc.js"
+    "build:doc": "typedoc --options typedoc.js",
+    "build:doc:html": "typedoc --out docs/html --options typedoc.js --plugin none"
   },
   "author": "",
   "license": "ISC",
