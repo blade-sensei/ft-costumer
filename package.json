@@ -1,13 +1,13 @@
 {
-  "name": "ft-request-url",
+  "name": "@blade-sensei/ft-request-url",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dts": "tsc -d --declarationDir dist/lib --emitDeclarationOnly --allowJs --declaration index.js",
-    "build:doc": "typedoc --options typedoc.js",
-    "build:doc:html": "typedoc --out docs/html --options typedoc.js --plugin none"
+    "build:doc": "npm run build:dts && typedoc --options typedoc.js",
+    "build:doc:html": "npm run build:dts && typedoc --out docs/html --options typedoc.js --plugin none"
   },
   "author": "",
   "license": "ISC",
