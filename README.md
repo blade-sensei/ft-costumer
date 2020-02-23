@@ -2,6 +2,10 @@
 
 Package used to fetch data from a list of URLs.
 
+## Documentation
+
+The documentation is [here](./docs/markdown/README.md)
+
 ## How to use
 
 ```bash
@@ -38,13 +42,26 @@ npm link ft-request-url
 //ft-request-url is the package name in package.json
 ```
 
+### Build documentation
+
+Official documentation markdown
+```bash
+$ npm run build:doc
+```
+
+if you need a pretty local documentation (html) with better UI run
+
+```bash
+$ npm run build:doc:html
+```
 
 ### Publishing a new version to npm
 
 - Respect commit rules
 - Make git version tag and bump package version
+- build documentation
 
 ```bash
-npm publish
+npm publish --access public
 ```
 
